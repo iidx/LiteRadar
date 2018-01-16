@@ -77,7 +77,7 @@ class LibRadarLite(object):
         if CLEAN_WORKSPACE >= 3:
             for dex_name in self.dex_names:
                 os.remove(dex_name)
-                os.removedirs(os.path.dirname(dex_name))
+            os.removedirs(os.path.dirname(dex_name))
 
     def unzip(self):
         # If it is a valid file
